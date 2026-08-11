@@ -2018,3 +2018,85 @@ header.main-header {
         transform: translateY(-4px) !important;
     }
 }
+/* =====================================================
+   FINAL UNIVERSAL CARD LAYOUT
+   Same card design across ALL pages
+   ===================================================== */
+
+.feature-card,
+.service-card,
+.process-card,
+.testimonial-card,
+.health-card,
+.benefit-card,
+.workflow-step {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+/* Service cards */
+#services .service-card {
+    min-height: 280px !important;
+    padding: 35px 25px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+/* Service title */
+#services .service-card h3 {
+    width: 100% !important;
+    margin: 0 0 15px 0 !important;
+    text-align: center !important;
+}
+
+/* Service description */
+#services .service-card p {
+    width: 100% !important;
+    margin: 0 0 15px 0 !important;
+    text-align: center !important;
+}
+
+/* Read More button/link */
+#services .service-card a,
+#services .service-card .details-btn {
+    display: inline-block !important;
+    margin: 10px auto 0 !important;
+}
+
+/* Mobile cards */
+@media (max-width: 768px) {
+
+    .feature-card,
+    .service-card,
+    .process-card,
+    .health-card,
+    .benefit-card {
+        width: 100% !important;
+        min-height: 220px !important;
+        padding: 30px 20px !important;
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    #services .service-card {
+        min-height: 250px !important;
+        padding: 35px 25px !important;
+    }
+
+    #services .service-card h3 {
+        font-size: 20px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 15px !important;
+    }
+
+    #services .service-card p {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+}
