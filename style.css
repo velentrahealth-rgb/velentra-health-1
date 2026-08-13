@@ -2100,3 +2100,18 @@ header.main-header {
         line-height: 1.6 !important;
     }
 }
+/* Fix for Blank Circle Icons */
+#services .service-icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #edf4ff !important;
+}
+
+#services .service-icon i {
+    font-size: 38px !important;
+    color: #0B5CAB !important; /* Visual blue icon color */
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
