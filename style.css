@@ -2115,3 +2115,51 @@ header.main-header {
     visibility: visible !important;
     opacity: 1 !important;
 }
+/* ========================================================
+   🔵 SERVICE CARDS & HOMEPAGE VISUAL FIX
+   ======================================================== */
+#services .services-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 30px !important;
+}
+
+#services .service-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    text-align: center !important;
+    padding: 35px 25px !important;
+    min-height: 280px !important;
+    background: #ffffff !important;
+    border-radius: 12px !important;
+}
+
+#services .service-icon {
+    width: 80px !important;
+    height: 80px !important;
+    background-color: #e8f1fd !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+    flex-shrink: 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+#services .service-icon i {
+    font-size: 34px !important;
+    color: #123B6D !important;
+    display: block !important;
+}
+
+#services .service-card:hover .service-icon {
+    background-color: #ffffff !important;
+    transform: scale(1.08);
+}
+
+#services .service-card:hover .service-icon i {
+    color: #18A7A7 !important;
+}
